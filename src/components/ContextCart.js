@@ -40,7 +40,7 @@ const ContextCart = () => {
                 </div>
                 <div className="cart-icon">
                     <img src="./images/cart.png" alt="cart" />
-                    <p>0</p>
+                    <p>7</p>
                 </div>
             </header>
             <section className="main-cart-section">
