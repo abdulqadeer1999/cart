@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Cart.css'
 import { Scrollbars } from 'react-custom-scrollbars-2';
+import Items from "./Items"
+import {products} from "./Product"
 
 function Cart() {
+
+    const [item,setItem] = useState(products)
     return (
         <div>
             <header>
@@ -22,89 +26,14 @@ function Cart() {
                 <div className="cart-items">
                     <div className="cart-items-container">
                     <Scrollbars>
+                         {
+                             item.map((curItem)=> {
+                               return <Items key = {curItem.id}  {...curItem}/> 
+                             })
+                         }
        
-                        <div className="items-info">
-                            <div className='product-img'>
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/71hIfcIPyxS._SL1500_.jpg" alt="image" />
-                            </div>
-                            <div className="title">
-                                <h2>samsung S21</h2>
-                                <p>black color</p>
-                            </div>
-                            <div className="add-minus-quantity">
-                                <i class="fas fa-minus minus"></i>
-                                <input type="text" placeholder="2" />
-                                <i class="fas fa-plus add"></i>
-                            </div>
-                            <div className="price">
-                                <h3>2000 Rs</h3>
-                            </div>
-                            <div className="remove-item">
-                                <i class="fas fa-trash-alt remove"></i>
-                            </div>
-                            <hr />
-                        </div>
-                        <div className="items-info">
-                            <div className='product-img'>
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/71hIfcIPyxS._SL1500_.jpg" alt="image" />
-                            </div>
-                            <div className="title">
-                                <h2>samsung S21</h2>
-                                <p>black color</p>
-                            </div>
-                            <div className="add-minus-quantity">
-                                <i class="fas fa-minus minus"></i>
-                                <input type="text" placeholder="2" />
-                                <i class="fas fa-plus add"></i>
-                            </div>
-                            <div className="price">
-                                <h3>2000 Rs</h3>
-                            </div>
-                            <div className="remove-item">
-                                <i class="fas fa-trash-alt remove"></i>
-                            </div>
-                            <hr />
-                        </div>
-                        <div className="items-info">
-                            <div className='product-img'>
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/71hIfcIPyxS._SL1500_.jpg" alt="image" />
-                            </div>
-                            <div className="title">
-                                <h2>samsung S21</h2>
-                                <p>black color</p>
-                            </div>
-                            <div className="add-minus-quantity">
-                                <i class="fas fa-minus minus"></i>
-                                <input type="text" placeholder="2" />
-                                <i class="fas fa-plus add"></i>
-                            </div>
-                            <div className="price">
-                                <h3>2000 Rs</h3>
-                            </div>
-                            <div className="remove-item">
-                                <i class="fas fa-trash-alt remove"></i>
-                            </div>
-                        </div>
-                        <div className="items-info">
-                            <div className='product-img'>
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/71hIfcIPyxS._SL1500_.jpg" alt="image" />
-                            </div>
-                            <div className="title">
-                                <h2>samsung S21</h2>
-                                <p>black color</p>
-                            </div>
-                            <div className="add-minus-quantity">
-                                <i class="fas fa-minus minus"></i>
-                                <input type="text" placeholder="2" />
-                                <i class="fas fa-plus add"></i>
-                            </div>
-                            <div className="price">
-                                <h3>2000 Rs</h3>
-                            </div>
-                            <div className="remove-item">
-                                <i class="fas fa-trash-alt remove"></i>
-                            </div>
-                        </div>
+               
+                       
                         </Scrollbars>
                     </div>
                 </div>

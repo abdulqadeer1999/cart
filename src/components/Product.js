@@ -12,7 +12,7 @@ export const products = [
         title: "Samsung M21",
         description:"white in color",
         price: '2300₹',
-        img: 'https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        img: 'https://hocotech.com/wp-content/uploads/2018/08/0.2mm-full-screen-curved-surface-hd-tempered-glass-a2-iphone-7-8-plus-transparency.jpg',
         amount:1
     },
         {
@@ -20,7 +20,7 @@ export const products = [
         title: "Redmi 9",
         description:"black in color",
         price: '3500₹',
-        img: 'https://images-na.ssl-images-amazon.com/images/I/71A9Vo1BatL._SL1500_.jpg',
+        img: 'https://st1.bgr.in/wp-content/uploads/2021/03/vivo-x60-2.jpg',
         amount:1
 },
   {
@@ -28,7 +28,7 @@ export const products = [
         title: "Iphone 12",
         description:"Best mobile ever",
         price: '90500₹',
-        img: 'https://images-na.ssl-images-amazon.com/images/I/71hIfcIPyxS._SL1500_.jpg',
+        img: 'https://i.gadgets360cdn.com/products/large/iqoo-3-db-386x800-1582613523.jpg',
         amount:1
 },
   {
