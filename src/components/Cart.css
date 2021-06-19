@@ -258,6 +258,10 @@ header {
   margin-top: 4rem;
   text-align: right;
 }
+ .clear-cart {
+  margin-left: 3rem;
+  background-color: rgb(209, 61, 61) !important;
+}
 
 .card-total h3 {
   font-style: 200;

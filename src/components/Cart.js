@@ -19,14 +19,23 @@ function Cart() {
     
     // to delete individual items from cart
     const removeItem = (id) => {
-           return dispatch({
+           return dispatch ({
                type : "REMOVE_ITEM",
                payload : id,
            })
     }
+
+    // clear the cart
+
+const clearCart = () => {
+    return dispatch ({
+        type: "CLEAR_CART",
+        
+    });
+}
     return (
         <>
-        <CartContext.Provider value={{...state,removeItem}}>  
+        <CartContext.Provider value={{...state,removeItem,clearCart}}>  
         <ContextCart />
         </CartContext.Provider>
         </>
