@@ -7,7 +7,7 @@ import {CartContext} from "./Cart"
 const ContextCart = () => {
    
 
-    const {item,clearCart}  = useContext(CartContext)
+    const {item,clearCart,totalAmount}  = useContext(CartContext)
 
     if (item.length === 0 ){
         return (
@@ -62,7 +62,7 @@ const ContextCart = () => {
                     </div>
                 </div>
                 <div className="card-total">
-                <h3>Cart Total: <span>22000 Rs</span> </h3>
+                <h3>Cart Total: <span>{totalAmount} Rs</span> </h3>
                 <button>Check out</button>
                 <button className="clear-cart" onClick={clearCart}>Clear Cart</button>
                 </div>
